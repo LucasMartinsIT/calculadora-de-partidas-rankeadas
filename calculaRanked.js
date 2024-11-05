@@ -1,24 +1,3 @@
-# calculadora-de-partidas-rankeadas
-Este projeto calcula o nível de um jogador com base na quantidade de vitórias e derrotas em partidas ranqueadas.
-
-## Tecnologias
-
-- JavaScript
-
-## Como Usar
-
-1. Abra o console do desenvolvedor no seu navegador (F12).
-2. Copie e cole o código JavaScript do projeto.
-3. Execute o código.
-4. Quando solicitado, insira o número de vitórias e derrotas do jogador.
-5. O saldo de vitórias e o nível do jogador serão exibidos no console.
-
-## Exemplo
-
-Aqui está um exemplo de uso da função:
-
-```javascript
-// Função para calcular o nível baseado em vitórias e derrotas
 function calculaRanked(vit, derr) {
     let saldoVit = vit - derr;
     let nivel;
@@ -49,6 +28,7 @@ function solicitarEntrada(mensagem) {
         valor = prompt(mensagem);
         valor = parseInt(valor); // Tenta converter para número
     } while (isNaN(valor) || valor < 0); // Continua pedindo até receber um número válido e não negativo
+    return valor;
 }
 
 // Pede para o usuário as vitórias e derrotas
